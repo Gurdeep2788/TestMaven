@@ -44,6 +44,8 @@ public class Launch {
 		WebElement slotNotAvailable = driver.findElement(By.xpath("//div[text()=' No appointment slots are currently available. Please try another application centre if applicable ']"));
 		Assert.assertEquals(true, slotNotAvailable.isDisplayed());	
 		
+		driver.quit();
+		
 	
 	}
 
